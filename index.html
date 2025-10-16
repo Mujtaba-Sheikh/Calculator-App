@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Calculatar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" placeholder="0" id="inputdiv" readonly />
+      <div>
+        <button class="operator ac" onclick="cleardisplay()">C</button>
+        <button class="operator del" onclick="deletedisplay()">DEL</button>
+        <button class="operator" onclick="todisplay('%')">%</button>
+        <button class="operator" onclick="todisplay('/')">/</button>
+      </div>
+      <div>
+        <button onclick="todisplay('7')">7</button>
+        <button onclick="todisplay('8')">8</button>
+        <button onclick="todisplay('9')">9</button>
+        <button class="operator" onclick="todisplay('*')">*</button>
+      </div>
+      <div>
+        <button onclick="todisplay('4')">4</button>
+        <button onclick="todisplay('5')">5</button>
+        <button onclick="todisplay('6')">6</button>
+        <button class="operator" onclick="todisplay('-')">-</button>
+      </div>
+      <div>
+        <button onclick="todisplay('1')">1</button>
+        <button onclick="todisplay('2')">2</button>
+        <button onclick="todisplay('3')">3</button>
+        <button class="operator" onclick="todisplay('+')">+</button>
+      </div>
+      <div>
+        <button onclick="todisplay('0')">0</button>
+        <button onclick="todisplay('00')">00</button>
+        <button onclick="todisplay('.')">.</button>
+        <button class="equalbtn" onclick="calculator()">=</button>
+      </div>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>
