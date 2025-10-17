@@ -66,3 +66,13 @@ button:hover{
 .operator{
     color:  #f67c14;
 }
+
+@media (max-width: 480px) {
+  input {
+    font-size: 26px;
+    padding: 15px;
+  }
+  button {
+    font-size: 18px;
+  }
+}
