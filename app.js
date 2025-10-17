@@ -7,7 +7,9 @@ function cleardisplay(){
     display.value = "";
 }
 
-
+function deletedisplay(){
+  display.value = display.value.slice(0, -1);
+}
 
 function calculator(){
     try{
